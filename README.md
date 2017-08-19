@@ -1,7 +1,7 @@
 Unbound (with DNSSEC validation)
 ===========
 
-* Based on the work of obi12341 (https://github.com/obi12341/docker-unbound) and adapted for my baseimage.
+Based on the work of obi12341 (https://github.com/obi12341/docker-unbound) and adapted for my baseimage.
 
 # Running
 
@@ -34,5 +34,5 @@ These options can be set via the environment variable -e flag:
 - **STATISTICS_CUMULATIVE**: enable cumulative statistics, without clearing them after printing. (Default: "no", Possible Values: "yes, no")
 - **EXTENDED_STATISTICS**: enable extended statistics (query types, answer codes, status) printed from unbound-control. (Default: "no", Possible Values: "yes, no")
 - **INTERFACE**: Sets the interface to listen on useful when using --net=host (Default 0.0.0.0, Possible Values: "<ipaddress>", "<ipaddress>@<port>")
-_ **UPSTREAM_PORT**: The port the upstream is using for DNS over TLS, default 853
+- **UPSTREAM_PORT**: The port the upstream is using for DNS over TLS, default 853
 - **UPSTREAM_HOST**: The host to use for upstream DNS over TLS, default is UncensoredDNS. Must be an IP address
