@@ -56,6 +56,8 @@ sed 's/{{EXTENDED_STATISTICS}}/'"${EXTENDED_STATISTICS}"'/' -i /etc/unbound/unbo
 sed 's/{{INTERFACE}}/'"${INTERFACE}"'/' -i /etc/unbound/unbound.conf
 sed 's/{{UPSTREAM_HOST}}/'"${UPSTREAM_HOST}"'/' -i /etc/unbound/unbound.conf
 sed 's/{{UPSTREAM_PORT}}/'"${UPSTREAM_PORT}"'/' -i /etc/unbound/unbound.conf
+sed 's/{{CONTROL_ENABLE}}/'"${CONTROL_ENABLE}"'/' -i /etc/unbound/unbound.conf
+sed 's/{{CONTROL_INTERFACE}}/'"${CONTROL_INTERFACE}"'/' -i -i /etc/unbound/unbound.conf
 
 chown -R unbound:unbound /etc/unbound
 s6-setuidgid unbound unbound-control-setup 
