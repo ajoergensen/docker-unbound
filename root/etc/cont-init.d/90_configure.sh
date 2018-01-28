@@ -7,7 +7,9 @@ if [[ "$DO_IPV6" == "yes" ]]
 	UPSTREAM_HOST=${UPSTREAM_HOST:-89.233.43.71}
 fi
 
-dockerize -template /app/unbound.conf.tmpl > ${UB_CFG}
+export UPSTREAM_HOST
+
+dockerize -template /app/unbound.conf.tmpl > /etc/unbound/unbound.conf
 chown -R unbound:unbound /etc/unbound
 s6-setuidgid unbound unbound-control-setup 
 s6-setuidgid unbound unbound-anchor -v -a /etc/unbound/root.key; true
