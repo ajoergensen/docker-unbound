@@ -36,3 +36,5 @@ These options can be set via the environment variable -e flag:
 - **INTERFACE**: Sets the interface to listen on useful when using --net=host (Default 0.0.0.0, Possible Values: "<ipaddress>", "<ipaddress>@<port>")
 - **UPSTREAM_PORT**: The port the upstream is using for DNS over TLS, default 853
 - **UPSTREAM_HOST**: The host to use for upstream DNS over TLS, default is UncensoredDNS. Must be an IP address
+- **CONTROL_ENABLE**: Enable Unound's control interface. Default is `no`
+- **CONTROL_INTERFACE**: Which interface to bind the control interface to, if enabled. Default is `0.0.0.0`
