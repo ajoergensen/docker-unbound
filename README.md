@@ -38,3 +38,4 @@ These options can be set via the environment variable -e flag:
 - **UPSTREAM_HOST**: The host to use for upstream DNS over TLS, default is UncensoredDNS. Must be an IP address
 - **CONTROL_ENABLE**: Enable Unound's control interface. Default is `no`
 - **CONTROL_INTERFACE**: Which interface to bind the control interface to, if enabled. Default is `0.0.0.0`
+- **USE_SYSLOG**: Log to syslog. Default is `yes`.
