@@ -11,7 +11,7 @@ Just use this command to start the container. Unbound will listen on port 53/udp
 
 # Configuration
 
-These options can be set via the environment variable -e flag:
+These options can be set via the environment variable -e flag. The configuration can be extended by dropping files as `/etc/unbound/conf.d/*.conf`
 
 - **DO_IPV6**: Enable or disable ipv6. (Default: "yes", Possible Values: "yes, no")
 - **DO_IPV4**: Enable or disable ipv4. (Default: "yes", Possible Values: "yes, no")
